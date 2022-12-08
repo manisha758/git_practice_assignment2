@@ -1,13 +1,19 @@
-  let function checkPrime(num){
-  let count=0;
-  for(let i=1;i<num;i++){
-    if(num%i){
-    count++;
+  let function checkPrime(number){
+  let factor=0;
+  for(let i=1;i<=num;i++){
+    if(num%i==0){
+    factor++;
    }
   }
- if (count==2){
+ if (factor==2){
  return true;
  }
 return false;
 }
-console.log(checkPrime(13));
+let ans=checkPrime(13);
+if(ans==true){
+console.log("Prime")
+}
+else{
+console.log("Not Prime")
+}
